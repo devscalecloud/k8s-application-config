@@ -8,7 +8,7 @@ metadata:
 data:
   PORT: "8080"
   APP_ENV: "production"
-  STORE_NAME: "Iyiola Store"
+  STORE_NAME: "Dapo Store"
   PROMO_BANNER: "Free delivery on orders over $500"
   CURRENCY_SYMBOL: "$"
   SESSION_TTL_MINUTES: "60"
