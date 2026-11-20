@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-argo-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/devscalecloud/k8s-application-config.git
+    targetRevision: HEAD
+    path: appmanifest
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dapo
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true

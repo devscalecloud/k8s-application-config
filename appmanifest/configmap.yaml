@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8secommerce-config
+  namespace: dapo
+  labels:
+    app: k8secommerce
+data:
+  PORT: "8080"
+  APP_ENV: "production"
+  STORE_NAME: "Iyiola Store"
+  PROMO_BANNER: "Free delivery on orders over $500"
+  CURRENCY_SYMBOL: "$"
+  SESSION_TTL_MINUTES: "60"
