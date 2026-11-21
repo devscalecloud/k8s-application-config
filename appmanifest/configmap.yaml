@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: k8secommerce-config
   namespace: dapo
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     app: k8secommerce
 data:
