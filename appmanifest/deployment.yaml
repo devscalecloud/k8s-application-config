@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: k8secommerce
   namespace: dapo
+  annotations:
+    reloader.stakater.com/auto: "true"
   labels:
     app: k8secommerce
 spec:
