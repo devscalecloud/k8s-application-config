@@ -9,8 +9,8 @@ metadata:
     app: k8secommerce
 data:
   PORT: "8080"
-  APP_ENV: "production"
-  STORE_NAME: "Ronaldo Store"
+  APP_ENV: "Non-Production"
+  STORE_NAME: "Abayomi Store"
   PROMO_BANNER: "Free delivery on orders over $500"
   CURRENCY_SYMBOL: "$"
   SESSION_TTL_MINUTES: "60"
